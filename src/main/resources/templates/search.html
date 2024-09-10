@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Client Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form form-1">
+      <h2 class="mb-2">Harvest Data by ID</h2>
+      <p class="text">Here you can harvest data with clients ID.</p>
+      <form action="/searchById" method="get" class="firstForm">
+        <input class="search" type="text" placeholder="Enter ID" name="id" />
+        <button class="btn btn-1" type="submit" id="searchByIdButton">
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="form form-2">
+      <h2 class="mb-2">Harvest Data by Region</h2>
+      <p class="text">
+        Here you can harvest data from a region. You will get the first client
+        as a result!
+      </p>
+      <form action="/searchByRegion" method="get" class="secondForm">
+        <input
+          class="search"
+          type="text"
+          placeholder="Enter Region"
+          name="company"
+        />
+        <button class="btn btn-2" type="submit" id="searchByRegionButton">
+          Search
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

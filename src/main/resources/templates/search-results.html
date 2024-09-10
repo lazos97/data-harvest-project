@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Search Results</title>
+  </head>
+  <body>
+    <h2>Search Results</h2>
+    <p>Search Type: <span th:text="${searchType}"></span></p>
+    <p>Search Value: <span th:text="${searchValue}"></span></p>
+    <h2>Scraped Data:</h2>
+    <pre th:text="${scrapedData}"></pre>
+    <a href="/search">Back to Search</a>
+  </body>
+</html>
